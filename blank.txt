@@ -1,9 +1,0 @@
-E.js 
-    - is dynamically embedding content based on requests so you don't have to manually write new files for every interaction. 
-    - This is done using templating. Templating in the context of webdev has a different protocol then regular CS and c++
-    - It also helps with seperation of concerns
-    - In order to do this we need to use an embedding templating language and one of the ones for the mern stack is ejs and it ends in the 
-        .ej file extension
-    - We used to use res.send and that is only for static files. or ses.sendfile 
-    - new method is res.render etc.
-    
