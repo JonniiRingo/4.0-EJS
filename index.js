@@ -7,16 +7,21 @@ app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
     console.log("Route accessed");
-
-    const today = new Date();
-    console.log("Date object created:", today);
-
+    const today = new Date("August 25, 2025 11:13:00");
     const day = today.getDay();
     console.log("Day of the week:", day);
 
+    let type = " a weekday"
+    let adv = "it's time to work hard";
+
+    if (day === 0 || day === 6){
+        type = " the weekend";
+        adv = "it's time to have some fun"
+    }
+
     res.render('index', {
-        dayType: 'a weekday', 
-        advice: "It's time to work hard"
+        dayType: type, 
+        advice: adv
     });
 });
 
