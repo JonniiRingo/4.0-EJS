@@ -7,7 +7,7 @@ app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
     console.log("Route accessed");
-    const today = new Date("August 25, 2025 11:13:00");
+    const today = new Date("August 24, 2025 11:13:00");
     const day = today.getDay();
     console.log("Day of the week:", day);
 
